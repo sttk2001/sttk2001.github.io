@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-js-if</title>
+    <script>
+        function height_low(){
+        let n1 = document.getElementById("num1").value
+        if(n1 > 5){
+            document.getElementById("output").innerHTML = "Height"
+        }else{
+            document.getElementById("output").innerHTML = "Low"
+        }
+     }
+    </script>
+
+</head>
+<body>
+    <input type="text" name="text" id="num1">
+    <br><br>
+    <button onclick="height_low()">Submit</button>
+    <br><br>
+    <p id="output"></p>
+
+</body>
+</html>
