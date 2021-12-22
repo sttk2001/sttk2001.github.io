@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28-js-json-data</title>
+    <script>
+        let json_car = '["Toyota","Yamaha","Honda"]'
+        let json_student = '{"sid" : 63309010027,"name" : "Sutthikan","age" : 20}'
+        let fruit = ["Apple","Banana","Orange","Mango"]
+        let teacher = {"tname":"Santichai" , "subject" : "C++","time" : 5}
+        let car = JSON.parse(json_car) //ได้ array
+        let student = JSON.parse(json_student) // ได้ object
+        let json_fruit = JSON.stringify(fruit)
+        let json_teacher = JSON.stringify(teacher)
+        console.log(car[0])
+        console.log(student.sid)
+        console.log(fruit)
+        console.log(json_fruit)
+        console.log(json_teacher)
+        console.log(teacher)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

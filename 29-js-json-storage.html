@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29-js-json-storage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+ <style>
+     .jumbotron{
+         position: relative;
+         overflow: hidden;
+     }
+     video{
+         position: absolute;
+         z-index: 1;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+     .container{
+         z-index: 2;
+         position: relative;
+     }
+     body{
+      font-family: 'Kanit', sans-serif;
+      background-color: rgb(36, 33, 30);
+     }
+
+ </style>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid mp-0 text-light" style="margin: 0%; background-image: url(https://dvbsinc.com/wp-content/uploads/2021/03/Workshops-Header-Background-1170x459.png)">
+    <video src="https://cdn.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0941_preview.mp4" autoplay loop muted></video>
+    <div class="container">
+      <h1 class="display-4">Sutthikan Bamrungrak</h1>
+     <p class="lead">Wellcome</p> 
+    </div>
+  </div>
+
+
+  <nav class="navbar mp-0 navbar-expand-lg navbar navbar-dark " style="background-color: black;">
+    <a class="navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+          </svg> </a>
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-sm-6 mx-auto">
+        <div class="card mt-2 h-100 w-100"  style="width: 18rem; background-color: rgb(17, 17, 17); color: white;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyipQREhh2e34GcC3gw9_n27M5WFH-GxO55cQ1BDnlPTHweZRV5imme4XDoPdWkRITDk4&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+              <p class="card-text"><h3>ระบบบันทึกข้อมูลนักเรียน</h3></p>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">รหัสนักศึกษา</label>
+                <input type="text" class="form-control" id="sid" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">ชื่อ-นามสกุล</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <button type="button" class="btn btn-dark " onclick="set_local_storage()" style="background-color: rgb(87, 0, 114);">Submit</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-6 mx-auto">
+        <div class="card mt-2 h-100 w-100" style="width: 18rem; background-color: rgb(17, 17, 17); color: white;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyipQREhh2e34GcC3gw9_n27M5WFH-GxO55cQ1BDnlPTHweZRV5imme4XDoPdWkRITDk4&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+              <p class="card-text"><h3>แสดงข้อมูลนักเรียน</h3></p>
+              <span id="output"> </span><br>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>   
+    let student = []
+    let json_student = ""
+    let array_data = []
+    function create_json(){
+        student.push(document.getElementById("sid").value)
+        student.push(document.getElementById("name").value)
+        json_student = JSON.stringify(student)
+        console.log(json_student)
+    }
+    function display_data() {
+        array_data = JSON.parse(localStorage.getItem("student"))
+        console.log(array_data)
+        document.getElementById("output").innerHTML = 
+        array_data[0] + " " + array_data[1]
+    }
+    function set_local_storage(){
+        create_json()
+        localStorage.setItem("student",json_student)
+        display_data()
+
+    }
+ 
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>  
+</body>
+</html>
